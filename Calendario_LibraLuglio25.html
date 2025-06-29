@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRA - Eventi Luglio 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --cream: #eae4ce;
+            --sage: #959d6b;
+            --sage-light: #a8b378;
+            --sage-dark: #7a8456;
+            --ochre: #b98b0d;
+            --ochre-light: #d4a315;
+            --ochre-dark: #9a730a;
+            --olive: #484726;
+            --petrol: #6f6834;
+            --sienna: #946342;
+            --sand: #d3ba8f;
+            --sand-light: #e0c9a3;
+            --white: #fefefe;
+            --warm-white: #faf9f6;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(165deg, var(--cream) 0%, var(--sand-light) 35%, var(--warm-white) 70%);
+            line-height: 1.65;
+            color: var(--olive);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            transform: translateZ(0);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 120%;
+            height: 120%;
+            background: 
+                radial-gradient(circle at 15% 25%, rgba(149, 157, 107, 0.06) 12%, transparent 35%),
+                radial-gradient(circle at 85% 75%, rgba(185, 139, 13, 0.04) 18%, transparent 45%),
+                radial-gradient(circle at 45% 60%, rgba(211, 186, 143, 0.03) 25%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+            will-change: transform;
+            animation: gentle-parallax 45s infinite ease-in-out;
+        }
+        
+        @keyframes gentle-parallax {
+            0%, 100% { transform: translateX(0) translateY(0) scale(1); }
+            25% { transform: translateX(-2px) translateY(-3px) scale(1.005); }
+            50% { transform: translateX(3px) translateY(-2px) scale(1.01); }
+            75% { transform: translateX(-1px) translateY(2px) scale(1.005); }
+        }
+        
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: linear-gradient(145deg, 
+                        rgba(254, 254, 254, 0.92) 0%, 
+                        rgba(250, 249, 246, 0.88) 100%);
+            box-shadow: 
+                0 0 40px rgba(72, 71, 38, 0.08),
+                0 20px 60px rgba(149, 157, 107, 0.04);
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+            transform: translateZ(0);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, 
+                        var(--cream) 0%, 
+                        var(--sand-light) 45%, 
+                        var(--sand) 100%);
+            padding: 65px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -20%;
+            width: 140%;
+            height: 140%;
+            background: 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20,20 Q30,10 40,20 T60,20" stroke="rgba(149,157,107,0.1)" stroke-width="0.5" fill="none"/><path d="M10,60 Q20,50 30,60 T50,60" stroke="rgba(185,139,13,0.08)" stroke-width="0.3" fill="none"/><circle cx="70" cy="15" r="1" fill="rgba(149,157,107,0.15)"/><circle cx="85" cy="80" r="1.5" fill="rgba(211,186,143,0.12)"/></svg>') repeat;
+            animation: organic-float 60s infinite ease-in-out;
+            opacity: 0.6;
+        }
+        
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo-text {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 5.5em;
+            font-weight: 400;
+            color: var(--olive);
+            letter-spacing: 4px;
+            text-transform: none;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+            margin-bottom: -10px;
+        }
+        
+        .logo-text:hover {
+            transform: scale(1.02);
+            color: var(--sage-dark);
+        }
+        
+        @keyframes organic-float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+            25% { transform: translate(-15px, -8px) rotate(1deg) scale(1.02); }
+            50% { transform: translate(10px, -15px) rotate(-0.5deg) scale(1.01); }
+            75% { transform: translate(-8px, 12px) rotate(0.8deg) scale(1.015); }
+        }
+        
+        .logo {
+            display: none;
+        }
+        
+        .tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95em;
+            font-weight: 300;
+            color: var(--petrol);
+            letter-spacing: 3px;
+            text-transform: lowercase;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 2;
+            opacity: 0.85;
+        }
+        
+        .decorative-line {
+            width: 120px;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                        transparent 0%, 
+                        var(--sage) 25%, 
+                        var(--ochre) 50%, 
+                        var(--sage) 75%, 
+                        transparent 100%);
+            margin: 25px auto;
+            border-radius: 1px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            font-weight: 400;
+            color: var(--petrol);
+            position: relative;
+            z-index: 2;
+            letter-spacing: 1px;
+        }
+        
+        .content {
+            padding: 55px 40px;
+        }
+        
+        .event-card {
+            background: linear-gradient(145deg, 
+                        rgba(254, 254, 254, 0.9) 0%, 
+                        rgba(250, 249, 246, 0.85) 100%);
+            border: 1px solid rgba(149, 157, 107, 0.12);
+            border-radius: 24px;
+            margin-bottom: 32px;
+            padding: 38px;
+            position: relative;
+            transition: all 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+            overflow: hidden;
+            box-shadow: 
+                0 4px 20px rgba(72, 71, 38, 0.06),
+                0 1px 3px rgba(149, 157, 107, 0.08);
+            will-change: transform;
+            transform: translateZ(0);
+        }
+        
+        .event-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, 
+                        var(--sage-light) 0%, 
+                        var(--sage) 50%, 
+                        var(--sage-dark) 100%);
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .event-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, 
+                        transparent 0%, 
+                        rgba(255, 255, 255, 0.6) 25%, 
+                        rgba(255, 255, 255, 0.8) 50%, 
+                        rgba(255, 255, 255, 0.6) 75%, 
+                        transparent 100%);
+        }
+        
+        .event-card:hover {
+            transform: translateY(-8px) translateZ(0) scale(1.02);
+            box-shadow: 
+                0 20px 40px rgba(72, 71, 38, 0.12),
+                0 8px 16px rgba(149, 157, 107, 0.15);
+            border-color: rgba(149, 157, 107, 0.25);
+        }
+        
+        .event-card:nth-child(even) {
+            transform: translateX(8px);
+        }
+        
+        .event-card:nth-child(odd) {
+            transform: translateX(-8px);
+        }
+        
+        .event-card:nth-child(even):hover {
+            transform: translateX(8px) translateY(-8px) translateZ(0) scale(1.02);
+        }
+        
+        .event-card:nth-child(odd):hover {
+            transform: translateX(-8px) translateY(-8px) translateZ(0) scale(1.02);
+        }
+        
+        .event-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+        
+        .event-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .date-display {
+            background: linear-gradient(135deg, 
+                        var(--sage-light) 0%, 
+                        var(--sage) 45%, 
+                        var(--sage-dark) 100%);
+            color: var(--white);
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            box-shadow: 
+                0 8px 25px rgba(149, 157, 107, 0.25),
+                inset 0 2px 8px rgba(255, 255, 255, 0.2);
+            flex-shrink: 0;
+            will-change: transform;
+            transition: all 0.3s ease;
+            transform: translateZ(0);
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            animation: gentle-breathing 4s infinite ease-in-out;
+        }
+        
+        @keyframes gentle-breathing {
+            0%, 100% { transform: scale(1) translateZ(0); }
+            50% { transform: scale(1.05) translateZ(0); }
+        }
+        
+        .date-number {
+            font-size: 2em;
+            line-height: 1;
+            font-weight: 700;
+        }
+        
+        .date-number.small {
+            font-size: 1.2em;
+            line-height: 1.1;
+            font-weight: 600;
+        }
+        
+        .date-day {
+            font-size: 0.7em;
+            font-weight: 400;
+            opacity: 0.95;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 2px;
+        }
+        
+        .event-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.95em;
+            font-weight: 500;
+            color: var(--olive);
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+        }
+        
+        .instructor {
+            color: var(--sienna);
+            font-style: italic;
+            font-size: 1.05em;
+            margin-bottom: 20px;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+        }
+        
+        .event-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 18px;
+            justify-content: center;
+        }
+        
+        .meta-badge {
+            background: linear-gradient(135deg, 
+                        rgba(149, 157, 107, 0.12) 0%, 
+                        rgba(149, 157, 107, 0.08) 100%);
+            color: var(--petrol);
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: 500;
+            border: 1px solid rgba(149, 157, 107, 0.15);
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 6px rgba(149, 157, 107, 0.08);
+            letter-spacing: 0.3px;
+        }
+        
+        .meta-badge:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(149, 157, 107, 0.15);
+        }
+        
+        .event-description {
+            color: var(--petrol);
+            font-size: 1.05em;
+            line-height: 1.7;
+            margin-bottom: 28px;
+            padding: 24px;
+            background: linear-gradient(135deg, 
+                        rgba(234, 228, 206, 0.25) 0%, 
+                        rgba(211, 186, 143, 0.15) 100%);
+            border-radius: 20px;
+            border: 1px solid rgba(234, 228, 206, 0.3);
+            border-left: 4px solid var(--sage);
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.2px;
+        }
+        
+        .event-description::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="90" cy="10" r="0.5" fill="rgba(149,157,107,0.1)"/><circle cx="15" cy="85" r="0.8" fill="rgba(211,186,143,0.08)"/><path d="M5,5 Q15,8 25,5" stroke="rgba(149,157,107,0.06)" stroke-width="0.2" fill="none"/></svg>') repeat;
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        
+        .event-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+        
+        .book-button {
+            background: linear-gradient(135deg, 
+                        var(--sage-light) 0%, 
+                        var(--sage) 45%, 
+                        var(--sage-dark) 100%);
+            color: var(--white);
+            border: none;
+            padding: 16px 32px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(149, 157, 107, 0.2);
+            will-change: transform;
+            transform: translateZ(0);
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .book-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                        transparent, 
+                        rgba(255, 255, 255, 0.15), 
+                        transparent);
+            transition: left 0.4s ease;
+        }
+        
+        .book-button:hover {
+            transform: translateY(-2px) translateZ(0) scale(1.03);
+            box-shadow: 0 8px 20px rgba(72, 71, 38, 0.25);
+        }
+        
+        .book-button:hover::before {
+            left: 100%;
+        }
+        
+        .book-button:active {
+            transform: translateY(-1px) translateZ(0) scale(1.01);
+        }
+        
+        .special-event {
+            background: linear-gradient(145deg, 
+                        rgba(185, 139, 13, 0.06) 0%, 
+                        rgba(234, 228, 206, 0.25) 50%, 
+                        rgba(211, 186, 143, 0.15) 100%);
+            border: 1px solid rgba(185, 139, 13, 0.2);
+            box-shadow: 
+                0 6px 25px rgba(185, 139, 13, 0.12),
+                0 2px 8px rgba(148, 99, 66, 0.08);
+        }
+        
+        .special-event::before {
+            background: linear-gradient(180deg, 
+                        var(--ochre-light) 0%, 
+                        var(--ochre) 50%, 
+                        var(--ochre-dark) 100%);
+        }
+        
+        .special-event .date-display {
+            background: linear-gradient(135deg, 
+                        var(--ochre-light) 0%, 
+                        var(--ochre) 45%, 
+                        var(--sienna) 100%);
+            box-shadow: 
+                0 8px 25px rgba(185, 139, 13, 0.3),
+                inset 0 2px 8px rgba(255, 255, 255, 0.25);
+        }
+        
+        .special-event .meta-badge {
+            background: linear-gradient(135deg, 
+                        rgba(185, 139, 13, 0.15) 0%, 
+                        rgba(185, 139, 13, 0.1) 100%);
+            color: var(--sienna);
+            border-color: rgba(185, 139, 13, 0.25);
+        }
+        
+        .special-event .book-button {
+            background: linear-gradient(135deg, 
+                        var(--ochre-light) 0%, 
+                        var(--ochre) 45%, 
+                        var(--sienna) 100%);
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, 
+                        var(--olive) 0%, 
+                        var(--petrol) 45%, 
+                        var(--sage-dark) 100%);
+            color: var(--cream);
+            padding: 65px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10,10 Q20,5 30,10 T50,10" stroke="rgba(234,228,206,0.1)" stroke-width="0.5" fill="none"/><circle cx="80" cy="20" r="1" fill="rgba(211,186,143,0.15)"/><circle cx="20" cy="80" r="1.5" fill="rgba(234,228,206,0.12)"/></svg>') repeat;
+            opacity: 0.3;
+            animation: footer-float 40s infinite ease-in-out;
+        }
+        
+        @keyframes footer-float {
+            0%, 100% { transform: translateX(0) translateY(0); }
+            50% { transform: translateX(-10px) translateY(-5px); }
+        }
+        
+        .footer-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2em;
+            font-weight: 500;
+            margin-bottom: 18px;
+            letter-spacing: 6px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .footer-text {
+            font-size: 1.15em;
+            font-weight: 300;
+            margin-bottom: 25px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-info {
+            font-weight: 500;
+            color: var(--sand-light);
+            font-size: 1.2em;
+            position: relative;
+            z-index: 2;
+            letter-spacing: 0.5px;
+        }
+
+        .optional-addon {
+            font-size: 0.85em;
+            color: var(--sienna);
+            margin-top: 8px;
+            font-style: italic;
+        }
+        
+                    .section-divider {
+            margin: 80px 0;
+            text-align: center;
+            position: relative;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, 
+                        rgba(234, 228, 206, 0.3) 0%, 
+                        rgba(211, 186, 143, 0.2) 50%, 
+                        rgba(250, 249, 246, 0.4) 100%);
+            border-radius: 40px;
+            overflow: hidden;
+        }
+        
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50"><path d="M0,25 Q50,5 100,25 T200,25" stroke="rgba(149,157,107,0.15)" stroke-width="2" fill="none"/><path d="M0,35 Q50,15 100,35 T200,35" stroke="rgba(185,139,13,0.1)" stroke-width="1.5" fill="none"/></svg>') repeat-x;
+            opacity: 0.6;
+            animation: gentle-wave 20s infinite ease-in-out;
+        }
+        
+        @keyframes gentle-wave {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(-20px); }
+        }
+        
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2em;
+            font-weight: 500;
+            color: var(--olive);
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+            letter-spacing: 2px;
+        }
+        
+        .section-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+            color: var(--petrol);
+            letter-spacing: 1px;
+            opacity: 0.85;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .decorative-dots {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 25px 0 15px 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--sage) 0%, var(--ochre) 100%);
+            animation: gentle-pulse 3s infinite ease-in-out;
+        }
+        
+        .dot:nth-child(2) { animation-delay: 0.5s; }
+        .dot:nth-child(3) { animation-delay: 1s; }
+        .dot:nth-child(4) { animation-delay: 1.5s; }
+        .dot:nth-child(5) { animation-delay: 2s; }
+        
+        @keyframes gentle-pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+        
+        .mini-calendar {
+            background: linear-gradient(145deg, 
+                        rgba(234, 228, 206, 0.4) 0%, 
+                        rgba(211, 186, 143, 0.3) 50%, 
+                        rgba(250, 249, 246, 0.5) 100%);
+            border-radius: 30px;
+            padding: 40px;
+            margin: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(149, 157, 107, 0.15);
+            box-shadow: 0 8px 30px rgba(72, 71, 38, 0.08);
+        }
+        
+        .mini-calendar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(149,157,107,0.1)"/><circle cx="80" cy="80" r="1.5" fill="rgba(211,186,143,0.08)"/></svg>') repeat;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        
+        .calendar-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8em;
+            font-weight: 500;
+            color: var(--olive);
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .calendar-header {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: var(--petrol);
+            padding: 8px 4px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        
+        .calendar-day {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9em;
+            font-weight: 400;
+            color: var(--olive);
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            cursor: default;
+            position: relative;
+        }
+        
+        .calendar-day.has-event {
+            background: linear-gradient(135deg, 
+                        var(--sage-light) 0%, 
+                        var(--sage) 100%);
+            color: var(--white);
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(149, 157, 107, 0.3);
+            transform: scale(1.05);
+        }
+        
+        .calendar-day.has-recurring {
+            background: linear-gradient(135deg, 
+                        var(--sienna) 0%, 
+                        var(--ochre-dark) 100%);
+            color: var(--white);
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(148, 99, 66, 0.3);
+            transform: scale(1.05);
+        }
+        
+        .calendar-day.has-special {
+            background: linear-gradient(135deg, 
+                        var(--ochre-light) 0%, 
+                        var(--ochre) 100%);
+            color: var(--white);
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(185, 139, 13, 0.3);
+            transform: scale(1.05);
+        }
+        
+        .calendar-day.other-month {
+            opacity: 0.3;
+        }
+        
+        .calendar-legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85em;
+            color: var(--petrol);
+        }
+        
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .legend-dot.recurring {
+            background: linear-gradient(135deg, var(--sienna) 0%, var(--ochre-dark) 100%);
+        }
+        
+        .legend-dot.monthly {
+            background: linear-gradient(135deg, var(--sage-light) 0%, var(--sage) 100%);
+        }
+        
+        .legend-dot.special {
+            background: linear-gradient(135deg, var(--ochre-light) 0%, var(--ochre) 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .mini-calendar {
+                padding: 30px 20px;
+                margin: 40px 0;
+            }
+            
+            .calendar-grid {
+                gap: 4px;
+            }
+            
+            .calendar-day {
+                width: 35px;
+                height: 35px;
+                font-size: 0.8em;
+            }
+            
+            .calendar-legend {
+                gap: 15px;
+                margin-top: 20px;
+            }
+            
+            .legend-item {
+                font-size: 0.8em;
+            }
+        }
+                margin: 50px 0;
+                padding: 40px 25px;
+            }
+            
+            .section-title {
+                font-size: 1.8em;
+            }
+            
+            .section-subtitle {
+                font-size: 0.9em;
+            }
+        }
+            .container {
+                margin: 0;
+            }
+            
+            .header {
+                padding: 45px 25px;
+            }
+            
+            .logo-text {
+                font-size: 4em;
+                letter-spacing: 3px;
+            }
+            
+            .content {
+                padding: 35px 25px;
+            }
+            
+            .event-card {
+                padding: 28px 22px;
+                margin-bottom: 25px;
+            }
+            
+            .event-card:nth-child(even),
+            .event-card:nth-child(odd) {
+                transform: translateX(0);
+            }
+            
+            .event-card:nth-child(even):hover,
+            .event-card:nth-child(odd):hover {
+                transform: translateY(-6px) translateZ(0) scale(1.02);
+            }
+            
+            .event-header {
+                gap: 15px;
+            }
+            
+            .event-meta {
+                gap: 12px;
+            }
+            
+            .footer {
+                padding: 45px 25px;
+            }
+            
+            .date-display {
+                width: 75px;
+                height: 75px;
+            }
+            
+            .event-title {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <div class="logo-text">Libra</div>
+                <div class="tagline">terra creativa</div>
+            </div>
+            <div class="decorative-line"></div>
+            <div class="subtitle">Eventi Luglio 2025</div>
+        </div>
+        
+        <div class="content">
+            
+            <!-- SEPARATORE ELEGANTE INIZIO -->
+            <div class="section-divider">
+                <div class="section-title">Eventi Settimanali</div>
+                <div class="decorative-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="section-subtitle">Appuntamenti fissi ogni settimana</div>
+            </div>
+            
+            <!-- APPUNTAMENTI FISSI SETTIMANALI -->
+            <div class="event-card recurring-event">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number small">Dal Lun al Sab</div>
+                    </div>
+                    <div>
+                        <div class="event-title">✨ Movimento Terapeutico Personalizzato</div>
+                        <div class="instructor">con Simone</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">Su appuntamento</span>
+                    <span class="meta-badge">50€/h individuale</span>
+                    <span class="meta-badge">25€/h in coppia</span>
+                </div>
+                <div class="event-description">
+                    Un percorso di movimento personalizzato che va oltre il semplice allenamento. Attraverso un approccio chinesiologico, ogni sessione è studiata per riequilibrare, riabilitare quando necessario e potenziare nelle fasi avanzate. Un'ora dedicata alla cura del tuo corpo attraverso il movimento consapevole.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Movimento Terapeutico Personalizzato con Simone" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card recurring-event">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number small">Lun-Sab</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🧘‍♀️ Yoga del Pavimento Pelvico</div>
+                        <div class="instructor">con Silvia</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">Lun 9:00 - Sab 9:00</span>
+                    <span class="meta-badge">15€/lezione</span>
+                </div>
+                <div class="event-description">
+                    Orari settimanali fissi per prenderti cura del tuo pavimento pelvico. Nelle lezioni con Silvia puoi portare sempre anche il tuo bebè se sei una neo-mamma!
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Yoga del Pavimento Pelvico con Silvia" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card recurring-event">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">Mer</div>
+                        <div class="date-day">8:30</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🧠 Meditazione al Mattino</div>
+                        <div class="instructor">con la psicologa Giada Boschetto</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">Ogni mercoledì 8:30-9:15</span>
+                    <span class="meta-badge">15€</span>
+                </div>
+                <div class="event-description">
+                    Inizia la giornata con la giusta energia attraverso la meditazione guidata. Un momento di calma e centratura prima di affrontare gli impegni quotidiani.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Meditazione al Mattino del mercoledì con Giada" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card recurring-event">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">Mer</div>
+                        <div class="date-day">19:00</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🧘 Yin Yoga</div>
+                        <div class="instructor">con Naty</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">Ogni mercoledì 19:00-20:00</span>
+                    <span class="meta-badge">20€</span>
+                </div>
+                <div class="event-description">
+                    Appuntamento fisso settimanale per rilassarti profondamente con la pratica dello Yin Yoga. Lascia andare le tensioni e trova il tuo equilibrio interiore.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Yin Yoga del mercoledì con Naty" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card recurring-event">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">Gio</div>
+                        <div class="date-day">9:00</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🧘 Yoga Vinyasa</div>
+                        <div class="instructor">con Irene Traina</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">Ogni giovedì 9:00-10:15</span>
+                    <span class="meta-badge">20€</span>
+                </div>
+                <div class="event-description">
+                    Pratica dinamica di Yoga Vinyasa per iniziare la giornata con energia e consapevolezza. Porta il tuo tappetino o acquistalo da noi!
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Yoga Vinyasa del giovedì con Irene" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <!-- SEPARATORE ELEGANTE -->
+            <div class="section-divider">
+                <div class="section-title">Eventi Mensili</div>
+                <div class="decorative-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="section-subtitle">Appuntamenti speciali di Luglio 2025</div>
+            </div>
+
+            <!-- EVENTI LUGLIO 2025 -->
+            
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">2</div>
+                        <div class="date-day">Mer</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🧬 Laboratorio di Psicogenealogia</div>
+                        <div class="instructor">con Giulia Perelli</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">17:00 - 19:00</span>
+                    <span class="meta-badge">20€</span>
+                </div>
+                <div class="event-description">
+                    Un viaggio nelle radici della tua famiglia per comprendere come i pattern del passato influenzano il tuo presente. Attraverso strumenti pratici scoprirai come trasformare le eredità emotive in risorse per la tua crescita personale.
+                    <div class="optional-addon">Aperitivo a base vegetale facoltativo +10€</div>
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare il Laboratorio di Psicogenealogia del 2 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">2</div>
+                        <div class="date-day">Mer</div>
+                    </div>
+                    <div>
+                        <div class="event-title">✨ Skin Care Naturale</div>
+                        <div class="instructor">con Estetista Bella Donna</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">18:30 - 20:30</span>
+                    <span class="meta-badge">15€</span>
+                </div>
+                <div class="event-description">
+                    Prenditi cura della tua pelle con un approccio naturale e consapevole. Una serata dedicata al tuo benessere dove imparerai rituali di bellezza che nutrono dentro e fuori.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare il Skin Care del 2 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">3</div>
+                        <div class="date-day">Gio</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🎨 Laboratorio Incisione su Tetrapack</div>
+                        <div class="instructor">con Irene Puglisi</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">17:00-18:00 bambini</span>
+                    <span class="meta-badge">18:15-19:15 adulti</span>
+                    <span class="meta-badge">10€ / 40€</span>
+                </div>
+                <div class="event-description">
+                    Trasforma il riciclaggio in arte! Usando la macchina della pasta come strumento creativo, scoprirai come dare nuova vita ai materiali di scarto creando piccole opere uniche.
+                    <div class="optional-addon">Pacchetto famiglia: 35€ totali</div>
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare il Laboratorio Incisione del 3 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">3</div>
+                        <div class="date-day">Gio</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🌊 Nomadic Vision - Summer Experience</div>
+                        <div class="instructor">con Lisa Zini, Stefania Fialdini, Francesca Ciuffi</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">18:00 - 20:00</span>
+                    <span class="meta-badge">45€</span>
+                </div>
+                <div class="event-description">
+                    Un'opportunità per trasformare lo stress in energia creativa attraverso respiro, consapevolezza e nutrimento consapevole. Un viaggio multidisciplinare con Lisa Zini (Breathing Instructor), Stefania Fialdini (Counselor) e Francesca Ciuffi (Nutrizionista Psicosomatica).
+                    <div class="optional-addon">Aperitivo a base vegetale su prenotazione +15€</div>
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Nomadic Vision del 3 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">5</div>
+                        <div class="date-day">Sab</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🧘‍♀️ Yoga e Brunch</div>
+                        <div class="instructor">con Alessia Piccinino</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">9:00 - 11:00</span>
+                    <span class="meta-badge">30€</span>
+                </div>
+                <div class="event-description">
+                    Workshop di Embodied Yoga e movimento consapevole per iniziare il weekend connettendoti profondamente con il tuo corpo. Un'esperienza che unisce pratica fisica e nutrimento dell'anima.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Yoga e Brunch del 5 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">5</div>
+                        <div class="date-day">Sab</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🐕 Naturopatia per Cani</div>
+                        <div class="instructor">con Vanessa Parducci</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">10:00 - 12:30</span>
+                    <span class="meta-badge">25€</span>
+                </div>
+                <div class="event-description">
+                    Scopri l'origine del cane e come supportare naturalmente il benessere del tuo fedele compagno. Un incontro prezioso per chi ama prendersi cura dei propri animali in modo olistico.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Naturopatia per Cani del 5 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">6</div>
+                        <div class="date-day">Dom</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🧠 Meditazione e Mindfulness Relazionale</div>
+                        <div class="instructor">con Alessia Piccinino</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">19:00 - 20:15</span>
+                    <span class="meta-badge">20€</span>
+                </div>
+                <div class="event-description">
+                    Come coltivare relazioni più autentiche partendo dalla relazione con te stesso. Strumenti di meditazione per sviluppare presenza e consapevolezza nelle tue connessioni.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Meditazione e Mindfulness del 6 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">6</div>
+                        <div class="date-day">Dom</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🎵 Voci di Luce - Concerto Meditativo</div>
+                        <div class="instructor">con Eleonora Velka</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">20:30</span>
+                    <span class="meta-badge">30€</span>
+                </div>
+                <div class="event-description">
+                    Tra terra e stelle, un concerto dell'anima con mantra, canti sacri e brani originali. Dalle vibrazioni di "The Power of Love" ai testi poetici di Franco Battiato, fino ai canti di luce di Velka.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Voci di Luce del 6 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">7</div>
+                        <div class="date-day">Lun</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🌸 A Scuola dai Fiori</div>
+                        <div class="instructor">con Galleria Bellina</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">19:00 - 21:30</span>
+                    <span class="meta-badge">65€</span>
+                </div>
+                <div class="event-description">
+                    Crea il tuo centro tavola estivo imparando l'arte della composizione floreale. Un'esperienza che unisce creatività e natura, con aperitivo a base vegetale incluso per completare la serata in bellezza.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare A Scuola dai Fiori del 7 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">9</div>
+                        <div class="date-day">Mer</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🎶 Yoga e Sound Healing</div>
+                        <div class="instructor">con Nati Francesca e Velka</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">19:30 - 21:30</span>
+                    <span class="meta-badge">45€</span>
+                </div>
+                <div class="event-description">
+                    Un viaggio profondo dove il movimento consapevole si fonde con le vibrazioni curative del suono. Lasciati guidare verso uno stato di rilassamento e riconnessione totale. Aperitivo finale a base vegetale incluso.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Yoga e Sound Healing del 9 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">12</div>
+                        <div class="date-day">Sab</div>
+                    </div>
+                    <div>
+                        <div class="event-title">📚 Animazione alla Lettura</div>
+                        <div class="instructor">con la psicologa dell'età evolutiva Anna Bonci</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">10:00 - 11:00</span>
+                    <span class="meta-badge">25€</span>
+                </div>
+                <div class="event-description">
+                    Stimola la relazione genitore-figlio attraverso attività ludiche che prendono vita dalla lettura di una storia. Momenti magici di connessione e crescita condivisa per bambini dai 2 anni e mezzo fino ai 6 anni insieme ai genitori.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Animazione alla Lettura del 12 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">12</div>
+                        <div class="date-day">Sab</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🌿 Respiro, Cosmetica e Medicina Cinese</div>
+                        <div class="instructor">con Lisa Zini e Vanessa Parducci</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">10:00 - 12:30</span>
+                    <span class="meta-badge">30€</span>
+                </div>
+                <div class="event-description">
+                    Il ruolo della pelle e la sua bellezza attraverso la medicina cinese, la cosmetica naturale e la respirazione. Un approccio olistico per una bellezza che nasce dall'interno con Lisa Zini (Breathing Instructor) e Vanessa Parducci (Iridologa e Naturopata). Laboratorio pratico e omaggi per ogni partecipante inclusi.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Respiro e Cosmetica del 12 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">12</div>
+                        <div class="date-day">Sab</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🕉️ Saraswati Workshop</div>
+                        <div class="instructor">con Irene Traina</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">10:30 - 12:30</span>
+                    <span class="meta-badge">45€</span>
+                </div>
+                <div class="event-description">
+                    Un workshop dedicato alla dea della saggezza e della creatività. Esplora la tua forza interiore attraverso pratiche che risvegliano la tua energia creativa. Include Matcha e Protein Bowls break.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Saraswati Workshop del 12 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card special-event">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">13</div>
+                        <div class="date-day">Dom</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🎨 Natura come Scultura - Giorno 1</div>
+                        <div class="instructor">con Galleria Bellina</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">9:00 - 17:00</span>
+                    <span class="meta-badge">Info su richiesta</span>
+                </div>
+                <div class="event-description">
+                    Corso professionalizzante di 2 giorni per professionisti e non del settore. Lezione tecnica sulla forma scultorea, gestione della resina e uso del colore come segno. Pranzo vegetale e creazione scultura inclusi.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei informazioni sul corso Natura come Scultura 13-14 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card special-event">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">14</div>
+                        <div class="date-day">Lun</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🎨 Natura come Scultura - Giorno 2</div>
+                        <div class="instructor">con Galleria Bellina</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">9:00 - 13:00</span>
+                    <span class="meta-badge">Info su richiesta</span>
+                </div>
+                <div class="event-description">
+                    Ultimazione del lavoro svolto, condivisione e saluti finali. Concludi il tuo percorso artistico e porta a casa la tua opera d'arte unica.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei informazioni sul corso Natura come Scultura 13-14 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">17</div>
+                        <div class="date-day">Gio</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🔮 Soulful Healing Circle</div>
+                        <div class="instructor">con Simona Avena e Roxana</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">18:00 - 20:00</span>
+                    <span class="meta-badge">20€</span>
+                </div>
+                <div class="event-description">
+                    Una sessione di meditazione guidata accompagnata dalle vibrazioni armoniche delle campane di cristallo insieme a Simona Avena (Naturopata) e Roxana (Insegnante di Yoga).
+                    <div class="optional-addon">Aperitivo a base vegetale facoltativo +10€</div>
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Soulful Healing Circle del 17 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">18</div>
+                        <div class="date-day">Ven</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🌸 Seconda Primavera: La Menopausa</div>
+                        <div class="instructor">con Vanessa Parducci</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">18:30 - 20:00</span>
+                    <span class="meta-badge">30€</span>
+                </div>
+                <div class="event-description">
+                    La menopausa dal punto di vista della medicina cinese con Vanessa Parducci (Naturopata e Iridologa). Scopri come vivere questa transizione come una nuova stagione di fioritura e consapevolezza.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Seconda Primavera del 18 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">19</div>
+                        <div class="date-day">Sab</div>
+                    </div>
+                    <div>
+                        <div class="event-title">👩 Masterclass di Yoga per la Donna</div>
+                        <div class="instructor">con Elena Ferraris</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">10:30 - 12:30</span>
+                    <span class="meta-badge">40€</span>
+                </div>
+                <div class="event-description">
+                    Una masterclass con Elena Ferraris, una delle più esperte insegnanti di yoga per la donna in Europa. Oltre 20 anni di esperienza e specializzazioni dedicate al mondo femminile. Aperitivo finale incluso.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Masterclass Yoga Donna del 19 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">19</div>
+                        <div class="date-day">Sab</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🌺 Workshop Yoga e Pelvi</div>
+                        <div class="instructor">con Elena Ferraris</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">17:00 - 19:00</span>
+                    <span class="meta-badge">45€</span>
+                </div>
+                <div class="event-description">
+                    Un viaggio attraverso la stabilità, la libertà e la presenza della zona pelvica. Esplora il centro energetico femminile con consapevolezza e delicatezza.
+                    <div class="optional-addon">Aperitivo facoltativo a base vegetale +10€</div>
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare Workshop Yoga e Pelvi del 19 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div></span>
+
+
+            <div class="event-card">
+                <div class="event-header">
+                    <div class="date-display">
+                        <div class="date-number">25</div>
+                        <div class="date-day">Ven</div>
+                    </div>
+                    <div>
+                        <div class="event-title">🌙 New Moon - Yoga Nidra e Sound Healing</div>
+                        <div class="instructor">con Alessia Piccinino</div>
+                    </div>
+                </div>
+                <div class="event-meta">
+                    <span class="meta-badge">19:00 - 20:30</span>
+                    <span class="meta-badge">35€</span>
+                </div>
+                <div class="event-description">
+                    Le vibrazioni dei suoni ancestrali accompagnate dalla luna nuova. Un'esperienza profonda di rilassamento e rinnovamento in sintonia con i cicli naturali.
+                </div>
+                <a href="https://wa.me/393491408666?text=Ciao! Vorrei prenotare New Moon del 25 luglio" class="book-button">
+                    📱 Prenota ora
+                </a>
+            </div>
+
+        </div>
+        
+        <!-- CALENDARIO MINI -->
+        <div class="mini-calendar">
+            <div class="calendar-title">Luglio 2025</div>
+            <div class="calendar-grid">
+                <div class="calendar-header">Lun</div>
+                <div class="calendar-header">Mar</div>
+                <div class="calendar-header">Mer</div>
+                <div class="calendar-header">Gio</div>
+                <div class="calendar-header">Ven</div>
+                <div class="calendar-header">Sab</div>
+                <div class="calendar-header">Dom</div>
+                
+                <div class="calendar-day other-month">30</div>
+                <div class="calendar-day has-recurring">1</div>
+                <div class="calendar-day has-event">2</div>
+                <div class="calendar-day has-event">3</div>
+                <div class="calendar-day has-recurring">4</div>
+                <div class="calendar-day has-event">5</div>
+                <div class="calendar-day has-event">6</div>
+                
+                <div class="calendar-day has-recurring">7</div>
+                <div class="calendar-day has-recurring">8</div>
+                <div class="calendar-day has-event">9</div>
+                <div class="calendar-day has-recurring">10</div>
+                <div class="calendar-day has-recurring">11</div>
+                <div class="calendar-day has-event">12</div>
+                <div class="calendar-day has-special">13</div>
+                
+                <div class="calendar-day has-special">14</div>
+                <div class="calendar-day has-recurring">15</div>
+                <div class="calendar-day has-recurring">16</div>
+                <div class="calendar-day has-event">17</div>
+                <div class="calendar-day has-event">18</div>
+                <div class="calendar-day has-event">19</div>
+                <div class="calendar-day">20</div>
+                
+                <div class="calendar-day has-recurring">21</div>
+                <div class="calendar-day has-recurring">22</div>
+                <div class="calendar-day has-recurring">23</div>
+                <div class="calendar-day has-recurring">24</div>
+                <div class="calendar-day has-event">25</div>
+                <div class="calendar-day has-recurring">26</div>
+                <div class="calendar-day">27</div>
+                
+                <div class="calendar-day has-recurring">28</div>
+                <div class="calendar-day has-recurring">29</div>
+                <div class="calendar-day has-recurring">30</div>
+                <div class="calendar-day has-recurring">31</div>
+                <div class="calendar-day other-month">1</div>
+                <div class="calendar-day other-month">2</div>
+                <div class="calendar-day other-month">3</div>
+            </div>
+            
+            <div class="calendar-legend">
+                <div class="legend-item">
+                    <div class="legend-dot recurring"></div>
+                    <span>Eventi Settimanali</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot monthly"></div>
+                    <span>Eventi Mensili</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot special"></div>
+                    <span>Eventi Speciali</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-title">LIBRA</div>
+            <div class="footer-text">Uno spazio dove benessere, crescita e connessione si incontrano</div>
+            <div class="contact-info">📱 Per prenotazioni: +39 349 140 8666</div>
+        </div>
+    </div>
+</body>
+</html>
+                    
